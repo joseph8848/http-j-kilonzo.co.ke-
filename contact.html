@@ -19,8 +19,15 @@
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html" class="active">Contact</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -29,8 +36,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Get in Touch</h1>
-            <p>Let's discuss your project and create something amazing together</p>
+            <h1 class="fade-in">Get in Touch</h1>
+            <p class="fade-in" style="--delay: 0.1s">Let's discuss your project and create something amazing together</p>
         </div>
     </section>
 
@@ -38,7 +45,7 @@
     <section class="contact-info-section">
         <div class="container">
             <div class="contact-info-grid">
-                <div class="contact-info-card">
+                <div class="contact-info-card fade-in" style="--delay: 0.1s">
                     <div class="contact-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <!-- Envelope -->
@@ -51,7 +58,7 @@
                     <p class="contact-desc">Send us an email and we'll respond within 24 hours</p>
                 </div>
 
-                <div class="contact-info-card">
+                <div class="contact-info-card fade-in" style="--delay: 0.2s">
                     <div class="contact-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <!-- Phone -->
@@ -66,7 +73,7 @@
                     <p class="contact-desc">Call us during business hours for immediate assistance</p>
                 </div>
 
-                <div class="contact-info-card">
+                <div class="contact-info-card fade-in" style="--delay: 0.3s">
                     <div class="contact-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <!-- Location Pin -->
@@ -86,7 +93,7 @@
     <section class="contact-form-section">
         <div class="container">
             <div class="form-wrapper">
-                <div class="form-graphic">
+                <div class="form-graphic fade-in-left">
                     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                         <!-- Background -->
                         <defs>
@@ -127,17 +134,19 @@
                         </g>
                     </svg>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form fade-in-right">
                     <h2>Send us a Message</h2>
-                    <form id="contactForm">
+                    <form id="contactForm" class="form-with-validation">
                         <div class="form-group">
-                            <label for="name">Full Name *</label>
+                            <label for="name">Full Name <span class="required">*</span></label>
                             <input type="text" id="name" name="name" required placeholder="Your full name">
+                            <span class="error-message" id="nameError"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
+                            <label for="email">Email Address <span class="required">*</span></label>
                             <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            <span class="error-message" id="emailError"></span>
                         </div>
 
                         <div class="form-group">
@@ -146,7 +155,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="service">Service Interest *</label>
+                            <label for="service">Service Interest <span class="required">*</span></label>
                             <select id="service" name="service" required>
                                 <option value="">-- Select a Service --</option>
                                 <option value="software">Software Development</option>
@@ -154,24 +163,29 @@
                                 <option value="sound">Sound Engineering</option>
                                 <option value="other">Other</option>
                             </select>
+                            <span class="error-message" id="serviceError"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="subject">Subject *</label>
+                            <label for="subject">Subject <span class="required">*</span></label>
                             <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                            <span class="error-message" id="subjectError"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Message *</label>
+                            <label for="message">Message <span class="required">*</span></label>
                             <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+                            <span class="error-message" id="messageError"></span>
                         </div>
 
                         <div class="form-group checkbox">
                             <input type="checkbox" id="agree" name="agree" required>
                             <label for="agree">I agree to be contacted about my inquiry</label>
+                            <span class="error-message" id="agreeError"></span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                        <div class="form-status" id="formStatus"></div>
                         <p class="form-note">* Required fields</p>
                     </form>
                 </div>
@@ -182,21 +196,21 @@
     <!-- Business Hours Section -->
     <section class="business-hours">
         <div class="container">
-            <h2>Business Hours</h2>
+            <h2 class="fade-in">Business Hours</h2>
             <div class="hours-grid">
-                <div class="hours-card">
+                <div class="hours-card fade-in" style="--delay: 0.1s">
                     <h3>🏢 Office Hours</h3>
                     <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
                     <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
                     <p><strong>Sunday:</strong> Closed</p>
                 </div>
-                <div class="hours-card">
+                <div class="hours-card fade-in" style="--delay: 0.2s">
                     <h3>📞 Support</h3>
                     <p><strong>Email:</strong> 24/7 Response</p>
                     <p><strong>Phone:</strong> Business Hours</p>
                     <p><strong>Emergency:</strong> Available on request</p>
                 </div>
-                <div class="hours-card">
+                <div class="hours-card fade-in" style="--delay: 0.3s">
                     <h3>⚡ Response Time</h3>
                     <p><strong>Email:</strong> Within 24 hours</p>
                     <p><strong>Phone:</strong> Immediate</p>
@@ -209,29 +223,29 @@
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
+            <h2 class="fade-in">Frequently Asked Questions</h2>
             <div class="faq-grid">
-                <div class="faq-item">
+                <div class="faq-item fade-in" style="--delay: 0.1s">
                     <h3>How long does a typical project take?</h3>
                     <p>Project timelines vary based on complexity. A small website takes 2-4 weeks, while larger applications may take 2-3 months. We'll provide a detailed timeline during consultation.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item fade-in" style="--delay: 0.2s">
                     <h3>Do you offer post-project support?</h3>
                     <p>Yes! We provide ongoing maintenance and support packages to ensure your project runs smoothly after launch. Let's discuss your needs during the consultation.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item fade-in" style="--delay: 0.3s">
                     <h3>Can you work with my existing team?</h3>
                     <p>Absolutely! We specialize in collaborative work and can integrate seamlessly with your existing team or development process.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item fade-in" style="--delay: 0.4s">
                     <h3>What is your pricing model?</h3>
                     <p>We offer flexible pricing options including fixed-price projects, hourly rates, and retainer agreements. Pricing depends on project scope and requirements.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item fade-in" style="--delay: 0.5s">
                     <h3>Do you provide hosting services?</h3>
                     <p>While we primarily focus on development, we can recommend reliable hosting providers or help you set up on your preferred platform.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item fade-in" style="--delay: 0.6s">
                     <h3>How do I get started?</h3>
                     <p>Simply fill out the contact form above, and we'll schedule a consultation to discuss your project, goals, and timeline!</p>
                 </div>
@@ -242,9 +256,9 @@
     <!-- Social Media Section -->
     <section class="social-cta">
         <div class="container">
-            <h2>Follow Us on Social Media</h2>
-            <p>Stay updated with our latest projects and insights</p>
-            <div class="social-buttons">
+            <h2 class="fade-in">Follow Us on Social Media</h2>
+            <p class="fade-in" style="--delay: 0.1s">Stay updated with our latest projects and insights</p>
+            <div class="social-buttons fade-in" style="--delay: 0.2s">
                 <a href="https://twitter.com" class="social-btn twitter">𝕏 Twitter</a>
                 <a href="https://linkedin.com" class="social-btn linkedin">in LinkedIn</a>
                 <a href="https://github.com/joseph8848" class="social-btn github">⚙️ GitHub</a>
@@ -266,6 +280,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -285,17 +301,8 @@
         </div>
     </footer>
 
-    <script>
-        // Basic form validation and submission
-        const form = document.getElementById('contactForm');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Here you would typically send the form data to a server
-                alert('Thank you for your message! We will get back to you soon.');
-                form.reset();
-            });
-        }
-    </script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 </html>
