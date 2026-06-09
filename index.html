@@ -21,8 +21,15 @@
                     <ul class="nav-menu">
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -32,7 +39,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text fade-in-up">
                     <h1>Welcome to j-Kilonzo</h1>
                     <p>Innovative Solutions in Software Development, Local Tours & Sound Engineering</p>
                     <div class="hero-cta">
@@ -40,7 +47,7 @@
                         <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
                     </div>
                 </div>
-                <div class="hero-graphic">
+                <div class="hero-graphic fade-in-right">
                     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                         <!-- Background circles -->
                         <circle cx="200" cy="200" r="180" fill="#f0f4ff" opacity="0.5"/>
@@ -79,9 +86,9 @@
     <!-- Services Preview Section -->
     <section class="services-preview">
         <div class="container">
-            <h2>What We Offer</h2>
+            <h2 class="section-title fade-in">What We Offer</h2>
             <div class="services-grid">
-                <div class="service-preview-card">
+                <div class="service-preview-card slide-in" style="--delay: 0.1s">
                     <div class="service-icon-box">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <!-- Laptop -->
@@ -100,7 +107,7 @@
                     <h3>Software Development</h3>
                     <p>Custom web and mobile applications built with cutting-edge technologies.</p>
                 </div>
-                <div class="service-preview-card">
+                <div class="service-preview-card slide-in" style="--delay: 0.2s">
                     <div class="service-icon-box">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <!-- Map -->
@@ -118,7 +125,7 @@
                     <h3>Local Tours</h3>
                     <p>Explore our region with guided tours and authentic cultural experiences.</p>
                 </div>
-                <div class="service-preview-card">
+                <div class="service-preview-card slide-in" style="--delay: 0.3s">
                     <div class="service-icon-box">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <!-- Speaker -->
@@ -133,7 +140,7 @@
                     <p>Professional audio production, mixing, and mastering services.</p>
                 </div>
             </div>
-            <div class="center-cta">
+            <div class="center-cta fade-in" style="--delay: 0.4s">
                 <a href="services.html" class="btn btn-primary">View All Services</a>
             </div>
         </div>
@@ -143,7 +150,7 @@
     <section class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-graphic">
+                <div class="about-graphic fade-in-left">
                     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
                         <!-- Profile circle -->
                         <circle cx="150" cy="150" r="140" fill="#667eea" opacity="0.1" stroke="#667eea" stroke-width="2"/>
@@ -165,7 +172,7 @@
                         <text x="220" y="130" text-anchor="middle" fill="#333" font-size="10" font-weight="bold">Years</text>
                     </svg>
                 </div>
-                <div class="about-text">
+                <div class="about-text fade-in-right">
                     <h2>About Me</h2>
                     <p>Hi! I'm Joseph Kilonzo, a passionate software developer, tour guide, and sound engineer based in Kenya. With over a decade of experience in technology and creative services, I'm dedicated to delivering exceptional results.</p>
                     <p>My diverse skill set allows me to approach projects from unique perspectives, combining technical expertise with creative vision.</p>
@@ -183,6 +190,7 @@
                             <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
                         </div>
                     </div>
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 1.5rem;">Learn More About Me</a>
                 </div>
             </div>
         </div>
@@ -192,19 +200,19 @@
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>50+</h3>
+                <div class="stat-card fade-in" style="--delay: 0s">
+                    <h3 class="counter" data-target="50">0</h3>
                     <p>Projects Completed</p>
                 </div>
-                <div class="stat-card">
-                    <h3>100+</h3>
+                <div class="stat-card fade-in" style="--delay: 0.1s">
+                    <h3 class="counter" data-target="100">0</h3>
                     <p>Happy Clients</p>
                 </div>
-                <div class="stat-card">
-                    <h3>10+</h3>
+                <div class="stat-card fade-in" style="--delay: 0.2s">
+                    <h3 class="counter" data-target="10">0</h3>
                     <p>Years Experience</p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card fade-in" style="--delay: 0.3s">
                     <h3>24/7</h3>
                     <p>Support Available</p>
                 </div>
@@ -215,9 +223,9 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Start Your Project?</h2>
-            <p>Let's work together to bring your ideas to life</p>
-            <a href="contact.html" class="btn btn-primary">Contact Me Today</a>
+            <h2 class="fade-in">Ready to Start Your Project?</h2>
+            <p class="fade-in" style="--delay: 0.1s">Let's work together to bring your ideas to life</p>
+            <a href="contact.html" class="btn btn-primary fade-in" style="--delay: 0.2s">Contact Me Today</a>
         </div>
     </section>
 
@@ -234,6 +242,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -252,5 +262,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

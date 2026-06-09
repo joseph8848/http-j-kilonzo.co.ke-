@@ -19,8 +19,15 @@
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -29,8 +36,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive solutions tailored to your needs</p>
+            <h1 class="fade-in">Our Services</h1>
+            <p class="fade-in" style="--delay: 0.1s">Comprehensive solutions tailored to your needs</p>
         </div>
     </section>
 
@@ -38,7 +45,7 @@
     <section class="service-detail">
         <div class="container">
             <div class="service-detail-content">
-                <div class="service-detail-graphic">
+                <div class="service-detail-graphic fade-in-left">
                     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                         <!-- Background -->
                         <rect width="400" height="400" fill="#f0f4ff"/>
@@ -75,7 +82,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="service-detail-text">
+                <div class="service-detail-text fade-in-right">
                     <h2>Software Development</h2>
                     <p>Transform your ideas into powerful, scalable software solutions. I specialize in creating web and mobile applications that drive business growth and enhance user experience.</p>
                     
@@ -115,7 +122,7 @@
     <section class="service-detail alternate">
         <div class="container">
             <div class="service-detail-content">
-                <div class="service-detail-text">
+                <div class="service-detail-text fade-in-left">
                     <h2>Local Tours & Experiences</h2>
                     <p>Discover the hidden gems, rich culture, and natural beauty of our region with expertly guided tours. Create unforgettable memories while learning about local history, traditions, and communities.</p>
                     
@@ -141,7 +148,7 @@
                         <p>✓ Flexible scheduling and custom tours</p>
                     </div>
                 </div>
-                <div class="service-detail-graphic">
+                <div class="service-detail-graphic fade-in-right">
                     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                         <!-- Mountain landscape -->
                         <defs>
@@ -185,7 +192,7 @@
     <section class="service-detail">
         <div class="container">
             <div class="service-detail-content">
-                <div class="service-detail-graphic">
+                <div class="service-detail-graphic fade-in-left">
                     <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                         <!-- Background -->
                         <rect width="400" height="400" fill="#f0f4ff"/>
@@ -235,7 +242,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="service-detail-text">
+                <div class="service-detail-text fade-in-right">
                     <h2>Sound Engineering & Production</h2>
                     <p>Professional audio production services for all your sound needs. From studio recording to live event management, I deliver high-quality audio solutions that elevate your project to the next level.</p>
                     
@@ -272,9 +279,9 @@
     <!-- Pricing Section -->
     <section class="pricing">
         <div class="container">
-            <h2>Service Packages</h2>
+            <h2 class="fade-in">Service Packages</h2>
             <div class="pricing-grid">
-                <div class="pricing-card">
+                <div class="pricing-card fade-in" style="--delay: 0.1s">
                     <h3>Starter</h3>
                     <div class="price">$500</div>
                     <p class="price-desc">Perfect for small projects</p>
@@ -285,7 +292,7 @@
                     </ul>
                     <button class="btn btn-secondary">Get Started</button>
                 </div>
-                <div class="pricing-card featured">
+                <div class="pricing-card featured fade-in" style="--delay: 0.2s">
                     <div class="badge">Most Popular</div>
                     <h3>Professional</h3>
                     <div class="price">$2000</div>
@@ -298,7 +305,7 @@
                     </ul>
                     <button class="btn btn-primary">Choose Plan</button>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card fade-in" style="--delay: 0.3s">
                     <h3>Enterprise</h3>
                     <div class="price">Custom</div>
                     <p class="price-desc">For large scale projects</p>
@@ -317,9 +324,9 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Let's discuss how we can help your project succeed</p>
-            <a href="contact.html" class="btn btn-primary">Contact Me Now</a>
+            <h2 class="fade-in">Ready to Get Started?</h2>
+            <p class="fade-in" style="--delay: 0.1s">Let's discuss how we can help your project succeed</p>
+            <a href="contact.html" class="btn btn-primary fade-in" style="--delay: 0.2s">Contact Me Now</a>
         </div>
     </section>
 
@@ -336,6 +343,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -354,5 +363,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

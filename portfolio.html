@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="j-Kilonzo Portfolio - View our projects and case studies">
+    <title>j-Kilonzo | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">j-Kilonzo</a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Portfolio</h1>
+            <p class="fade-in" style="--delay: 0.1s">Explore our recent projects and case studies</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="tours">Tours</button>
+                <button class="filter-btn" data-filter="sound">Sound</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Software Project 1 -->
+                <div class="portfolio-item fade-in" data-category="software" style="--delay: 0.1s">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#gradSoftware1)"/>
+                            <defs>
+                                <linearGradient id="gradSoftware1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="48" font-weight="bold">💻</text>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p class="category-tag">Software Development</p>
+                        <p>Modern e-commerce web application built with React and Node.js</p>
+                    </div>
+                </div>
+
+                <!-- Software Project 2 -->
+                <div class="portfolio-item fade-in" data-category="software" style="--delay: 0.2s">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#gradSoftware2)"/>
+                            <defs>
+                                <linearGradient id="gradSoftware2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="48" font-weight="bold">📱</text>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobile Banking App</h3>
+                        <p class="category-tag">Software Development</p>
+                        <p>Secure mobile banking application for iOS and Android</p>
+                    </div>
+                </div>
+
+                <!-- Tour Project 1 -->
+                <div class="portfolio-item fade-in" data-category="tours" style="--delay: 0.3s">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#gradTour1)"/>
+                            <defs>
+                                <linearGradient id="gradTour1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4caf50;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#2d5016;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="48" font-weight="bold">🏔️</text>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mountain Adventure Tour</h3>
+                        <p class="category-tag">Local Tours</p>
+                        <p>Guided hiking and cultural experience in mountain regions</p>
+                    </div>
+                </div>
+
+                <!-- Tour Project 2 -->
+                <div class="portfolio-item fade-in" data-category="tours" style="--delay: 0.4s">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#gradTour2)"/>
+                            <defs>
+                                <linearGradient id="gradTour2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff9800;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#d32f2f;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="48" font-weight="bold">🍜</text>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Culinary Culture Tour</h3>
+                        <p class="category-tag">Local Tours</p>
+                        <p>Food tasting and cooking experience with local chefs</p>
+                    </div>
+                </div>
+
+                <!-- Sound Project 1 -->
+                <div class="portfolio-item fade-in" data-category="sound" style="--delay: 0.5s">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#gradSound1)"/>
+                            <defs>
+                                <linearGradient id="gradSound1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9c27b0;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#673ab7;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="48" font-weight="bold">🎵</text>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Album Mastering</h3>
+                        <p class="category-tag">Sound Engineering</p>
+                        <p>Professional mastering for independent artist's debut album</p>
+                    </div>
+                </div>
+
+                <!-- Sound Project 2 -->
+                <div class="portfolio-item fade-in" data-category="sound" style="--delay: 0.6s">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#gradSound2)"/>
+                            <defs>
+                                <linearGradient id="gradSound2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#673ab7;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3f51b5;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="48" font-weight="bold">🎙️</text>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Podcast Production</h3>
+                        <p class="category-tag">Sound Engineering</p>
+                        <p>Complete podcast production and editing series</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="fade-in">Have a Project in Mind?</h2>
+            <p class="fade-in" style="--delay: 0.1s">Let's bring your vision to life</p>
+            <a href="contact.html" class="btn btn-primary fade-in" style="--delay: 0.2s">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>j-Kilonzo</h4>
+                    <p>Software Development | Local Tours | Sound Engineering</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" title="Twitter">Twitter</a>
+                        <a href="#" title="LinkedIn">LinkedIn</a>
+                        <a href="#" title="GitHub">GitHub</a>
+                        <a href="#" title="Instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 j-Kilonzo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
