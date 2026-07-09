@@ -12,8 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" href="images/LOGO.jpeg">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { corePlugins: { preflight: false } }</script>
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Navigation -->
     <header class="site-header" id="siteHeader">
         <nav class="navbar">
@@ -68,7 +73,7 @@
                     <div class="product-media" data-lightbox data-img="images/camera.jpeg" data-title="Professional Video Camera" data-desc="HD video camera for professional event coverage — crisp, broadcast-quality footage.">
                         <span class="product-badge flagship">Media</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/camera.jpeg" alt="Professional video camera">
+                        <img src="images/camera.jpeg" alt="Professional video camera" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Media · Camera</div>
@@ -91,7 +96,7 @@
                     <div class="product-media" data-lightbox data-img="images/drone.jpeg" data-title="Aerial Drone" data-desc="4K aerial drone footage for stunning event coverage from above.">
                         <span class="product-badge flagship">Media</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/drone.jpeg" alt="Professional aerial drone">
+                        <img src="images/drone.jpeg" alt="Professional aerial drone" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Media · Drone</div>
@@ -114,7 +119,7 @@
                     <div class="product-media" data-lightbox data-img="images/drone 2.jpeg" data-title="Secondary Drone Unit" data-desc="Additional drone for multi-angle aerial coverage and backup.">
                         <span class="product-badge flagship">Media</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/drone 2.jpeg" alt="Additional drone unit">
+                        <img src="images/drone 2.jpeg" alt="Additional drone unit" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Media · Drone</div>
@@ -137,7 +142,7 @@
                     <div class="product-media" data-lightbox data-img="images/tent 1.jpeg" data-title="Event Tent — Small" data-desc="Quality event tent for small gatherings, accommodating up to 50 guests.">
                         <span class="product-badge">Tent</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/tent 1.jpeg" alt="Small event tent">
+                        <img src="images/tent 1.jpeg" alt="Small event tent" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Tents · Small</div>
@@ -160,7 +165,7 @@
                     <div class="product-media" data-lightbox data-img="images/tent 2.jpeg" data-title="Event Tent — Medium" data-desc="Spacious tent for weddings and corporate events, seating up to 100 guests.">
                         <span class="product-badge">Tent</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/tent 2.jpeg" alt="Medium event tent">
+                        <img src="images/tent 2.jpeg" alt="Medium event tent" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Tents · Medium</div>
@@ -183,7 +188,7 @@
                     <div class="product-media" data-lightbox data-img="images/tent 3.jpeg" data-title="Event Tent — Large" data-desc="Grand tent for large gatherings, festivals, and major events with 200+ guests.">
                         <span class="product-badge flagship">Premium</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/tent 3.jpeg" alt="Large event tent">
+                        <img src="images/tent 3.jpeg" alt="Large event tent" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Tents · Large</div>
@@ -208,7 +213,7 @@
                     <div class="product-media" data-lightbox data-img="images/Pa systems.jpg" data-title="Full PA System" data-desc="Complete PA system with mixer, amplifiers, speakers, monitors, and bass — everything for your event.">
                         <span class="product-badge flagship">Full Package</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/Pa systems.jpg" alt="Full PA speaker system">
+                        <img src="images/Pa systems.jpg" alt="Full PA speaker system" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Sound · PA System</div>
@@ -233,7 +238,7 @@
                     <div class="product-media contain" data-lightbox data-img="images/line array speakers.jpeg" data-title="Line Array System" data-desc="Concert-grade line-array with matched subwoofers — even coverage from front row to back fence.">
                         <span class="product-badge flagship">Premium</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/line array speakers.jpeg" alt="Line array speaker stack">
+                        <img src="images/line array speakers.jpeg" alt="Line array speaker stack" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Sound · Line Array</div>
@@ -257,7 +262,7 @@
                     <div class="product-media" data-lightbox data-img="images/line array.jpeg" data-title="Compact Line Array" data-desc="Scalable line-array hang for mid-size venues, weddings and conferences.">
                         <span class="product-badge">Line Array</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/line array.jpeg" alt="Compact line-array system">
+                        <img src="images/line array.jpeg" alt="Compact line-array system" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Sound · Line Array</div>
@@ -280,7 +285,7 @@
                     <div class="product-media" data-lightbox data-img="images/mixing console 1.webp" data-title="Mixing Console" data-desc="Multi-channel mixing console for precise live mixing and recording.">
                         <span class="product-badge">Mixer</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/mixing console 1.webp" alt="Professional mixing console">
+                        <img src="images/mixing console 1.webp" alt="Professional mixing console" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Sound · Mixer</div>
@@ -303,7 +308,7 @@
                     <div class="product-media" data-lightbox data-img="images/mixing console 2.webp" data-title="Compact Mixing Console" data-desc="Compact multi-channel mixer — ideal for smaller events and monitoring setups.">
                         <span class="product-badge">Mixer</span>
                         <span class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-                        <img src="images/mixing console 2.webp" alt="Compact mixing console">
+                        <img src="images/mixing console 2.webp" alt="Compact mixing console" loading="lazy">
                     </div>
                     <div class="product-body">
                         <div class="product-cat">Sound · Mixer</div>
@@ -397,5 +402,10 @@
     <a href="https://wa.me/254706923653" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.8 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.3.1.7-.1 1.3z"/></svg>
     </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 </body>
 </html>

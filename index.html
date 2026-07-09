@@ -12,8 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" href="images/LOGO.jpeg">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { corePlugins: { preflight: false } }</script>
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Navigation -->
     <header class="site-header" id="siteHeader">
         <nav class="navbar">
@@ -83,7 +88,7 @@
                 <!-- Camera & Drone Package -->
                 <article class="pricing-card slide-in" style="--delay:.05s">
                     <div class="pricing-card-media">
-                        <img src="images/camera.jpeg" alt="Professional video cameras for event coverage">
+                        <img src="images/camera.jpeg" alt="Professional video cameras for event coverage" loading="lazy">
                         <div class="pricing-card-badge">
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
                         </div>
@@ -108,7 +113,7 @@
                 <!-- Drone Solo Card -->
                 <article class="pricing-card slide-in" style="--delay:.15s">
                     <div class="pricing-card-media">
-                        <img src="images/drone.jpeg" alt="Professional drone for aerial videography">
+                        <img src="images/drone.jpeg" alt="Professional drone for aerial videography" loading="lazy">
                         <div class="pricing-card-badge">
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
                         </div>
@@ -134,7 +139,7 @@
                 <!-- Tents Card -->
                 <article class="pricing-card slide-in" style="--delay:.25s">
                     <div class="pricing-card-media">
-                        <img src="images/tent 1.jpeg" alt="Professional event tent for outdoor occasions">
+                        <img src="images/tent 1.jpeg" alt="Professional event tent for outdoor occasions" loading="lazy">
                         <div class="pricing-card-badge">
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 22l9-18 9 18"/><path d="M12 4v18"/></svg>
                         </div>
@@ -186,7 +191,7 @@
                 <!-- Full PA System -->
                 <article class="pricing-card featured slide-in" style="--delay:.05s">
                     <div class="pricing-card-media">
-                        <img src="images/Pa systems.jpg" alt="Full PA system with speakers, mixer, and amplifiers">
+                        <img src="images/Pa systems.jpg" alt="Full PA system with speakers, mixer, and amplifiers" loading="lazy">
                         <div class="pricing-card-badge gold">
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/></svg>
                         </div>
@@ -215,7 +220,7 @@
                 <!-- Line Array Package -->
                 <article class="pricing-card slide-in" style="--delay:.15s">
                     <div class="pricing-card-media">
-                        <img src="images/line array speakers.jpeg" alt="Line array speaker system for large events">
+                        <img src="images/line array speakers.jpeg" alt="Line array speaker system for large events" loading="lazy">
                         <div class="pricing-card-badge">
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>
                         </div>
@@ -242,7 +247,7 @@
                 <!-- Individual Equipment -->
                 <article class="pricing-card slide-in" style="--delay:.25s">
                     <div class="pricing-card-media">
-                        <img src="images/mixing console 1.webp" alt="Professional mixing console available for individual hire">
+                        <img src="images/mixing console 1.webp" alt="Professional mixing console available for individual hire" loading="lazy">
                         <div class="pricing-card-badge">
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg>
                         </div>
@@ -289,7 +294,7 @@
                     <a href="catalog.html" class="btn btn-primary">View Our Equipment</a>
                 </div>
                 <div class="split-media fade-in-right">
-                    <img src="images/tent 2.jpeg" alt="Professional outdoor event with tent setup">
+                    <img src="images/tent 2.jpeg" alt="Professional outdoor event with tent setup" loading="lazy">
                 </div>
             </div>
         </div>
@@ -378,5 +383,10 @@
     <a href="https://wa.me/254706923653" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.8 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.3.1.7-.1 1.3z"/></svg>
     </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 </body>
 </html>

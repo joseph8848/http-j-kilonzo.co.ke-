@@ -62,6 +62,44 @@
         onScroll();
     }
 
+    /* ---------- Scroll progress bar ---------- */
+    const scrollProgress = document.getElementById('scrollProgress');
+    if (scrollProgress) {
+        const updateProgress = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgress.style.width = progress + '%';
+        };
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+    }
+
+    /* ---------- Back to top button ---------- */
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        const toggleBackToTop = () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        };
+        window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        toggleBackToTop();
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    /* ---------- Hero parallax ---------- */
+    const heroVisual = document.querySelector('.hero-visual img');
+    if (heroVisual) {
+        const parallax = () => {
+            const scrollTop = window.scrollY;
+            if (scrollTop < 800) {
+                heroVisual.style.transform = `translateY(${scrollTop * 0.08}px) scale(1)`;
+            }
+        };
+        window.addEventListener('scroll', parallax, { passive: true });
+    }
+
     /* ---------- Mobile nav ---------- */
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
