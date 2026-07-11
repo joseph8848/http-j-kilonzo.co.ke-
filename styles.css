@@ -370,6 +370,143 @@ h1, h2, h3, h4, h5 {
 .hero-wave { position: relative; z-index: 2; margin-top: 3rem; line-height: 0; }
 .hero-wave svg { width: 100%; height: 60px; display: block; }
 
+/* ---------- Hero Redesign (centered, orbs, strip) ---------- */
+.hero-redesign {
+    text-align: center;
+    padding: 7rem 0 6rem;
+}
+.hero-redesign .hero-content {
+    display: block;
+}
+.hero-center {
+    max-width: 780px;
+    margin: 0 auto;
+}
+.hero-redesign h1 {
+    font-size: clamp(2.4rem, 5.8vw, 4.2rem);
+    letter-spacing: -.03em;
+}
+.hero-redesign p.lead {
+    max-width: 620px;
+    margin: 0 auto 2.2rem;
+    font-size: 1.2rem;
+}
+
+/* Dual phone CTAs */
+.hero-phones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.8rem;
+}
+
+/* Animated gradient orbs */
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(60px);
+    opacity: .45;
+    z-index: 0;
+}
+.hero-orb--1 {
+    width: 500px; height: 500px;
+    top: -120px; left: -80px;
+    background: radial-gradient(circle, rgba(41,121,255,.7), transparent 70%);
+    animation: orbFloat1 8s ease-in-out infinite alternate;
+}
+.hero-orb--2 {
+    width: 400px; height: 400px;
+    bottom: -60px; right: -60px;
+    background: radial-gradient(circle, rgba(224,160,32,.55), transparent 70%);
+    animation: orbFloat2 10s ease-in-out infinite alternate;
+}
+.hero-orb--3 {
+    width: 300px; height: 300px;
+    top: 40%; left: 55%;
+    background: radial-gradient(circle, rgba(93,155,255,.5), transparent 70%);
+    animation: orbFloat3 12s ease-in-out infinite alternate;
+}
+@keyframes orbFloat1 {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(40px, 30px) scale(1.12); }
+}
+@keyframes orbFloat2 {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(-30px, -20px) scale(1.15); }
+}
+@keyframes orbFloat3 {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(-20px, 25px) scale(1.08); }
+}
+
+/* Service icon strip */
+.hero-services-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: var(--radius-pill);
+    padding: .8rem 2rem;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.strip-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: rgba(255,255,255,.92);
+    font-family: var(--font-display);
+    font-size: .88rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    transition: color .25s;
+}
+.strip-item:hover {
+    color: var(--gold-soft);
+}
+.strip-icon {
+    width: 36px; height: 36px;
+    display: grid;
+    place-items: center;
+    background: rgba(255,255,255,.1);
+    border-radius: 10px;
+    transition: background .25s;
+}
+.strip-item:hover .strip-icon {
+    background: rgba(255,255,255,.18);
+}
+.strip-icon svg {
+    width: 18px; height: 18px;
+    stroke: #fff;
+}
+.strip-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(255,255,255,.2);
+}
+
+@media (max-width: 760px) {
+    .hero-redesign { padding: 5rem 0 4.5rem; }
+    .hero-services-strip {
+        flex-wrap: wrap;
+        gap: .8rem;
+        padding: .7rem 1.2rem;
+        border-radius: var(--radius-lg);
+    }
+    .strip-divider { display: none; }
+    .hero-phones .btn { width: 100%; justify-content: center; }
+}
+@media (max-width: 480px) {
+    .hero-redesign { padding: 4rem 0 3.5rem; }
+    .strip-item span { font-size: .78rem; }
+}
+
 /* ============================================================
    PAGE HEADER (inner pages)
    ============================================================ */
